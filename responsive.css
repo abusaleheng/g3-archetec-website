@@ -117,6 +117,18 @@ main {
   margin-top: 0px;
   margin-bottom: 0px;
 }
+#button-badge{
+  padding: 45px 42px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-left: -100px;
+  margin-top: -100px;
+}
+#Year-badge{
+  font-size: 4rem;
+  font-weight: 700;
+}
+
 /* some facts design */
 .fax-discirption {
   max-width: 540px;
@@ -158,10 +170,23 @@ main {
 .spon-company img{
   filter: grayscale(100%);
 }
+.footer-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px auto;
+  background-color: #FFF4E7;
+  max-width: 1440px;
+}
+.section-container{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 @media screen and (max-width: 576px) {
   .navber,
   .nav-links,
-  .teames {
+  .teames,
+  .love-features{
     flex-direction: column;
   }
   .team-img-section {
@@ -177,11 +202,17 @@ main {
     width: 100%;
     margin: 0 auto;
   }
+  .features-architect img{
+    width: 100%;
+  }
+  #button-badge{
+    margin-top: 20px;
+    margin-left: 20px;
+  }
 }
-
 /* medium size device */
 @media screen and (min-width: 576px) and (max-width: 992px) {
-  .teames {
+  .teames,.love-features {
     flex-direction: column;
   }
   .our-features {
@@ -195,5 +226,12 @@ main {
   }
   .spon-company {
     gap: 50px;
+  }
+  .features-architect img{
+    width: 100%;
+  }
+  #button-badge{
+    margin-top: 20px;
+    margin-left: 20px;
   }
 }
