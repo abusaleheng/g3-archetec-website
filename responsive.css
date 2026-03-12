@@ -96,6 +96,47 @@ main {
 #Quick-list {
   font-weight: 500;
 }
+/* some facts design */
+.fax-discirption {
+  max-width: 540px;
+}
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.fact {
+  border: 1px solid #ff900e;
+  width: 240px;
+  height: 240px;
+  border-radius: 8px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.fact-number {
+  font-size: 2.8rem;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.icons-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 5px;
+}
+.sponser-container {
+  max-width: 540px;
+  justify-content: center;
+  text-align: center;
+  margin: 50px auto;
+}
+.spon-company {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.spon-company img{
+  filter: grayscale(100%);
+}
 @media screen and (max-width: 576px) {
   .navber,
   .nav-links,
@@ -104,6 +145,12 @@ main {
   }
   .team-img-section {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .card-container,
+  .spon-company {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    gap: 24px;
   }
   .our-features {
     width: 100%;
@@ -118,5 +165,14 @@ main {
   }
   .our-features {
     margin-left: 40px;
+  }
+  .card-container,
+  .spon-company {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    gap: 24px;
+  }
+  .spon-company {
+    gap: 50px;
   }
 }
